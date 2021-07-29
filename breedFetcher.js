@@ -2,7 +2,7 @@ let request = require("request");
 let breedName = process.argv[2];
 
 request(
-  `https://api.thecatapii.com/v1/breeds/search?q=${breedName}`,
+  `https://api.thecatapi.com/v1/breeds/search?q=${breedName}`,
   (error, response, body) => {
     //logs error if request fails
     if (error !== null) {
